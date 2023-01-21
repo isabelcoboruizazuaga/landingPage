@@ -54,279 +54,372 @@
     .card {
         width: 18rem;
     }
+
+    #servicios button {
+        width: 80px;
+        height: 90px;
+        padding: 0;
+        border: none;
+    }
+
+    #servicios img {
+        width: 100%;
+        overflow: hidden;
+    }
 </style>
 
 
 <body class="container-fluid">
 
     <!--NAVEGACIÓN-->
-        <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                
-                <!--Logo-->
-                <a class="navbar-brand" href="#">
-                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-                </a>
+    <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
 
-                <!--Hamburguesa-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+            </a>
 
-                <!--Lista de enlaces-->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills  nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#a">Título</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#b">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#c">Nuestros expertos dicen</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#d" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Lo que ofrecemos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#e">Algo 1</a></li>
-                                <li><a class="dropdown-item" href="#f">Algo 2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Algo 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <!--Hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Lista de enlaces-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills  nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#a">Título</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#b">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#c">Nuestros expertos dicen</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#d" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lo que ofrecemos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#e">Algo 1</a></li>
+                            <li><a class="dropdown-item" href="#f">Algo 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Algo 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--CONTENIDO-->
+    <div data-bs-spy="scroll" id="navbar-example" data-bs-target="#navbar-example" data-bs-offset="20"
+        class="scrollspy-example" tabindex="0">
+
+        <section id="titulo">
+            <h2 id="a">Título</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
+                    Nunc
+                    pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed nisl
+                    vitae
+                    magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue id,
+                    semper
+                    congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
+                    sagittis,
+                    faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
+                    Nunc
+                    pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed nisl
+                    vitae
+                    magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue id,
+                    semper
+                    congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
+                    sagittis,
+                    faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2 id="b">Sobre Nosotros</h2>
+            <div class="row p-2 border-bottom conjunto">
+                <div class="col-auto imagen">
+                    <img
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                </div>
+                <div class="col-10 texto">
+                    <h3>Titulo 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
+                        pretium. Nunc
+                        pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
+                        nisl vitae
+                        magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue
+                        id, semper
+                        congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
+                        sagittis,
+                        faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
                 </div>
             </div>
-        </nav>
-   
-        <!--CONTENIDO-->
-        <div data-bs-spy="scroll" id="navbar-example" data-bs-target="#navbar-example" data-bs-offset="-20"
-            class="scrollspy-example" tabindex="0">
+            <div class="row p-2 border-bottom conjunto">
+                <div class="col-10 texto">
+                    <h3>Titulo 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
+                        pretium. Nunc
+                        pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
+                        nisl vitae
+                        magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue
+                        id, semper
+                        congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
+                        sagittis,
+                        faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+                </div>
+                <div class="col-auto imagen">
+                    <img
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                </div>
+            </div>
+            <div class="row p-2 conjunto">
+                <div class="col-auto imagen">
+                    <img
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                </div>
+                <div class="col-10 texto">
+                    <h3>Titulo 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
+                        pretium. Nunc
+                        pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
+                        nisl vitae
+                        magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue
+                        id, semper
+                        congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
+                        sagittis,
+                        faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+                </div>
+            </div>
+        </section>
 
-            <section id="titulo">
-                <h2 id="a">Título</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
-                    Nunc
-                    pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed nisl
-                    vitae
-                    magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue id,
-                    semper
-                    congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                    sagittis,
-                    faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+        <section id="opiniones">
+            <h2 id="c">Nuestros expertos dicen</h2>
+            <div class="row p-2 cards justify-content-center">
+                <div class="card col-auto ms-4 mb-4">
+                    <img class="card-img-top" alt="..."
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-auto ms-4 mb-4">
+                    <img class="card-img-top" alt="..."
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-auto ms-4 mb-4">
+                    <img class="card-img-top" alt="..."
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card col-auto ms-4 mb-4">
+                    <img class="card-img-top" alt="..."
+                        src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                    </div>
+                </div>
+        </section>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
-                    Nunc
-                    pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed nisl
-                    vitae
-                    magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue id,
-                    semper
-                    congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                    sagittis,
-                    faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+        <section id="servicios">
+            <h3 id="d">Servicios</h3>
 
-            </section>
-
-            <section id="sobre-nosotros">
-                <h2 id="b">Sobre Nosotros</h2>
-                <div class="row p-2 border-bottom conjunto">
-                    <div class="col-auto imagen">
+            <!--Botones-->
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element1"
+                        aria-expanded="false" aria-controls="element1">
                         <img
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
-                    </div>
-                    <div class="col-10 texto">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
-                            pretium. Nunc
-                            pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
-                            nisl vitae
-                            magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue
-                            id, semper
-                            congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                            sagittis,
-                            faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
+                            src="https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg?w=826" />
+                        <div class="mask text-light d-flex justify-content-center flex-column text-center">
+                            <h4>Custom heading</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="row p-2 border-bottom conjunto">
-                    <div class="col-10 texto">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
-                            pretium. Nunc
-                            pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
-                            nisl vitae
-                            magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue
-                            id, semper
-                            congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                            sagittis,
-                            faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
-                    </div>
-                    <div class="col-auto imagen">
+
+                <div class="col d-flex justify-content-center">
+                    <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element2"
+                        aria-expanded="false" aria-controls="element2">
                         <img
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
+                            src="https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg?w=826" />
+                        <div class="mask text-light d-flex justify-content-center flex-column text-center">
+                            <h4>Custom heading</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="row p-2 conjunto">
-                    <div class="col-auto imagen">
+
+                <div class="col d-flex justify-content-center">
+                    <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element3"
+                        aria-expanded="false" aria-controls="element3">
                         <img
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
-                    </div>
-                    <div class="col-10 texto">
-                        <h3>Titulo 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
-                            pretium. Nunc
-                            pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
-                            nisl vitae
-                            magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue
-                            id, semper
-                            congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                            sagittis,
-                            faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="opiniones">
-                <h2 id="c">Nuestros expertos dicen</h2>
-                <div class="row p-2 cards justify-content-center">
-                    <div class="card col-auto ms-4 mb-4">
-                        <img class="card-img-top" alt="..."
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="card col-auto ms-4 mb-4">
-                        <img class="card-img-top" alt="..."
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="card col-auto ms-4 mb-4">
-                        <img class="card-img-top" alt="..."
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="card col-auto ms-4 mb-4">
-                        <img class="card-img-top" alt="..."
-                            src="https://thumbs.dreamstime.com/b/l%C3%ADnea-cuadrada-blanco-en-fondo-p%C3%BArpura-abstracto-marco-vac%C3%ADo-plantilla-del-arte-color-de-agua-y-espacio-la-copia-acuarela-147478604.jpg">
-                        <div class="card-body">
-                            <h4 class="card-title">Card title</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-            </section>
-
-            <section id="servicios">
-                <h3 id="d">Servicios</h3>
-                <p>
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-                        aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
-                        aria-controls="multiCollapseExample2">Toggle second element</button>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target=".multi-collapse" aria-expanded="false"
-                        aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-                </p>
-                <div class="row">
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <div class="card card-body">
-                                Some placeholder content for the first collapse component of this multi-collapse
-                                example. This panel is hidden by default but revealed when the user activates the
-                                relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card card-body">
-                                Some placeholder content for the second collapse component of this multi-collapse
-                                example. This panel is hidden by default but revealed when the user activates the
-                                relevant trigger.
-                            </div>
+                            src="https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg?w=826" />
+                        <div class="mask text-light d-flex justify-content-center flex-column text-center">
+                            <h4>Custom heading</h4>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="col d-flex justify-content-center">
+                    <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element4"
+                        aria-expanded="false" aria-controls="element4">
+                        <img
+                            src="https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg?w=826" />
+                        <div class="mask text-light d-flex justify-content-center flex-column text-center">
+                            <h4>Custom heading</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element5"
+                        aria-expanded="false" aria-controls="element5">
+                        <img
+                            src="https://img.freepik.com/vector-premium/linea-cuadrada-brillante_1189-1600.jpg?w=826" />
+                        <div class="mask text-light d-flex justify-content-center flex-column text-center">
+                            <h4>Custom heading</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <section id="suscribete">
-                <h2 id="e">Subscribete</h2><!-- botón para el modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleForm"> <!-- data-bs-target del botón es igual a
-        id del modal -->
+            <!--Párrafos desplegables-->
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="collapse multi-collapse" id="element1">
+                        <div class="card card-body">
+                            Some placeholder content for the first collapse component of this multi-collapse
+                            example. This panel is hidden by default but revealed when the user activates the
+                            relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="collapse multi-collapse" id="element2">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse
+                            example. This panel is hidden by default but revealed when the user activates the
+                            relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="collapse multi-collapse" id="element3">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse
+                            example. This panel is hidden by default but revealed when the user activates the
+                            relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="collapse multi-collapse" id="element4">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse
+                            example. This panel is hidden by default but revealed when the user activates the
+                            relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <div class="collapse multi-collapse" id="element5">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse
+                            example. This panel is hidden by default but revealed when the user activates the
+                            relevant trigger.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="suscribete">
+            <h2 id="e">Suscríbete</h2>
+
+            <div class="row">
+                <p class="col-auto">Entérate de todas las novedades</p>
+
+                <!--Botón-->
+                <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#miFormulario">
                     Formulario
                 </button>
+            </div>
 
-                <!-- formulario dentro del modal -->
-                <div class="modal fade" id="exampleForm" tabindex="-1" aria-labelledby="exampleFormLabel"
-                    aria-hidden="true">
-                    <!-- modal-dialog -->
-                    <div class="modal-dialog modal-dialog-centered">
-                        <!-- modal-content -->
-                        <div class="modal-content">
-                            <!-- modal-header -->
-                            <div class="modal-header">
-                                <!-- modal-title -->
-                                <h5 class="modal-title" id="exampleFormLabel">Contacto</h5>
-                                <!-- Close modal button -->
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <!-- modal-body -->
-                            <div class="modal-body">
-                                <div class="container-fluid">
-                                    <div class="mb-3 row">
-                                        <label for="exampleFormControlInput1" class="col-3 col-form-label">Email</label>
-                                        <div class="col-9">
-                                            <input type="text" class="form-control-plaintext"
-                                                id="exampleFormControlInput1" placeholder="email@example.com">
-                                        </div>
-                                    </div>
-                                    <div class="mb-3 row">
-                                        <label for="inputPassword" class="col-3 col-form-label">Password</label>
-                                        <div class="col-9">
-                                            <input type="password" class="form-control" id="inputPassword">
-                                        </div>
+
+            <!-- Contenido del formulario-->
+            <div class="modal fade" id="miFormulario" tabindex="-1" aria-labelledby="miFormularioLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="miFormularioLabel">Introduce tus datos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- modal-body -->
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3 row">
+                                    <label for="inputNombre" class="col-3 col-form-label">Nombre</label>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" id="inputNombre">
                                     </div>
                                 </div>
+                                <div class="mb-3 row">
+                                    <label for="inputApellidos" class="col-3 col-form-label">Apellidos</label>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" id="inputApellidos">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="miFormularioControlInput1" class="col-3 col-form-label">Email</label>
+                                    <div class="col-9">
+                                        <input type="email" class="form-control-plaintext"
+                                            id="miFormularioControlInput1" placeholder="correoelectronico@ejemplo.com">
+                                    </div>
+                                </div>
+                            </div>
 
-                            </div>
-                            <!-- modal-footer -->
-                            <div class="modal-footer">
-                                <!-- Actions  -->
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                                    Close
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                    Save changes
-                                </button>
-                            </div>
+                        </div>
+                        <!-- modal-footer -->
+                        <div class="modal-footer">
+                            <!-- Actions  -->
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                Cerrar
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Suscribirme
+                            </button>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
