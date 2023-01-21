@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Site</title>
-    <script src='main.js'></script>
+    <!--<script src='main.js'></script>-->
 
     <!--Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -35,8 +35,6 @@
         position: relative;
         overflow: hidden;
 
-        /*Para que no haya overlap entre el navbar y el contenido*/
-        padding-top: 50px;
     }
 
     .scrollspy-example {
@@ -57,59 +55,54 @@
 </style>
 
 
-<body class="container-fluid">
+<body  >
 
-    <!--NAVEGACIÓN-->
-        <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+    <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+            </a>
+
+            <!--Hamburguesa-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 
-                <!--Logo-->
-                <a class="navbar-brand" href="#">
-                    <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
-                </a>
-
-                <!--Hamburguesa-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Lista de enlaces-->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills  nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#a">Título</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#b">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#c">Nuestros expertos dicen</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#d" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Lo que ofrecemos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#e">Algo 1</a></li>
-                                <li><a class="dropdown-item" href="#f">Algo 2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Algo 3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills  nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#a">Título</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#b">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#c">Nuestros expertos dicen</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#d" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lo que ofrecemos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#e">Algo 1</a></li>
+                            <li><a class="dropdown-item" href="#f">Algo 2</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Algo 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
-   
-        <!--CONTENIDO-->
-        <div data-bs-spy="scroll" id="navbar-example" data-bs-target="#navbar-example" data-bs-offset="-20"
-            class="scrollspy-example" tabindex="0">
+        </div>
+    </nav>
 
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="20" class="scrollspy-example" tabindex="0">
             <section id="titulo">
                 <h2 id="a">Título</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
@@ -237,6 +230,7 @@
                     </div>
             </section>
 
+            
             <section id="servicios">
                 <h3 id="d">Servicios</h3>
                 <p>
@@ -326,7 +320,8 @@
                     </div>
                 </div>
             </section>
-        </div>
+          </div>
+          
 </body>
 
 </html>
