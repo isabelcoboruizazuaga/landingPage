@@ -41,9 +41,16 @@ h4 {
     bottom: initial;
 }
 
-
+/*SOBRE NOSOTROS*/
 #sobre-nosotros img{
     width: 100%;
+}
+
+/**/
+#opiniones .card{
+    background-color: rgb(133, 93, 58);
+    background-color: rgb(75, 55, 37);
+    background-color: rgb(36, 28, 20);
 }
 
 .scrollspy-example {
