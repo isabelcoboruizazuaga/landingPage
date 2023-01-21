@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Site</title>
-    <script src='main.js'></script>
 
     <!--Popper-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -28,51 +27,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!--codigo js-->
+    <script src='main.js'></script>
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display+SC:ital@1&family=Taviraj&display=swap"
+        rel="stylesheet">
+
+    <!--Mi estilo-->
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<style>
-    body {
-        position: relative;
-        overflow: hidden;
 
-        /*Para que no haya overlap entre el navbar y el contenido*/
-        padding-top: 50px;
-    }
-
-    .scrollspy-example {
-        position: relative;
-        height: 90vh;
-        overflow: auto;
-
-        overflow-x: hidden;
-    }
-
-    .imagen img {
-        max-width: 10vw;
-    }
-
-    .card {
-        width: 18rem;
-    }
-
-    #servicios button {
-        width: 80px;
-        height: 90px;
-        padding: 0;
-        border: none;
-    }
-
-    #servicios img {
-        width: 100%;
-        overflow: hidden;
-    }
-</style>
-
-
-<body class="container-fluid">
+<body class="container-fluid bg-dark text-white">
 
     <!--NAVEGACIÓN-->
-    <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
 
             <!--Logo-->
@@ -91,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills  nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#a">Título</a>
+                        <a class="nav-link active" aria-current="page" href="#titulo">Título</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#b">Sobre nosotros</a>
@@ -122,30 +96,60 @@
     <div data-bs-spy="scroll" id="navbar-example" data-bs-target="#navbar-example" data-bs-offset="20"
         class="scrollspy-example" tabindex="0">
 
+        <!--Sección del título-->
         <section id="titulo">
-            <h2 id="a">Título</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
-                    Nunc
-                    pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed nisl
-                    vitae
-                    magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue id,
-                    semper
-                    congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                    sagittis,
-                    faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu pretium.
-                    Nunc
-                    pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed nisl
-                    vitae
-                    magna pharetra aliquam. Fusce in finibus tellus. Pellentesque elit magna, pulvinar vel augue id,
-                    semper
-                    congue arcu. Mauris sed suscipit nisl, sit amet varius ex. Aenean varius massa consequat est
-                    sagittis,
-                    faucibus sagittis purus gravida. Proin sollicitudin pellentesque tristique</p>
-
+            <div id="carruselTitulo" class="carousel slide" data-bs-ride="carousel">
+                <!--Vídeos-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video autoplay loop muted>
+                            <source src="media/coffeepouring.mp4" type="video/mp4" />
+                        </video>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1  id="a">Second slide label</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <video autoplay loop muted>
+                            <source src="media/coffee_beans.mp4" type="video/mp4" />
+                        </video>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Second slide label</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <video autoplay loop muted>
+                            <source src="media/coffee_production.mp4" type="video/mp4" />
+                        </video>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Second slide label</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Controles-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselTitulo"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselTitulo"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section>
 
+        <!--Sección sobre nosotros-->
         <section id="sobre-nosotros">
             <h2 id="b">Sobre Nosotros</h2>
             <div class="row p-2 border-bottom conjunto">
@@ -365,7 +369,8 @@
                 <p class="col-auto">Entérate de todas las novedades</p>
 
                 <!--Botón-->
-                <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal" data-bs-target="#miFormulario">
+                <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal"
+                    data-bs-target="#miFormulario">
                     Formulario
                 </button>
             </div>

@@ -13,14 +13,18 @@ $(document).ready(function () {
             menuIsShown = !menuIsShown;
         }
         //Demás enlaces
-        $(".active").removeClass("active");
+        if(!$("active").hasClass("item")){
+            $("active").removeClass("active");
+        }
         $(this).addClass("active");
 
     });
 
     //Click en elementos del dropdown
     $(".dropdown-item").on("click", function () {
-        $(".active").removeClass("active");
+        if(!$("active").hasClass("item")){
+            $("active").removeClass("active");
+        }
         $(".nav-link.dropdown-toggle").addClass("active");
 
         //Ocultar en dispositivos móviles
@@ -42,10 +46,7 @@ $(document).ready(function () {
         menuIsShown = !menuIsShown;
     });
 
-    //Collapse
-    new bootstrap.Collapse(multiCollapseExample1, {
-        toggle: true
-      });
+
 
     var menuIsShown = false;
 })
