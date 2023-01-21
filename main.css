@@ -42,6 +42,10 @@ h4 {
 }
 
 
+#sobre-nosotros img{
+    width: 100%;
+}
+
 .scrollspy-example {
     position: relative;
     height: 90vh;
@@ -50,9 +54,6 @@ h4 {
     overflow-x: hidden;
 }
 
-.imagen img {
-    max-width: 10vw;
-}
 
 .card {
     width: 18rem;
