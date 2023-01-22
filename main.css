@@ -19,6 +19,12 @@ h4 {
     font-family: 'Playball', cursive;
 }
 
+/*NAVBAR*/
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: rgb(195, 170, 148);
+}
+
+.invert { filter: invert(100%); }
 
 /*-----CARRUSEL------*/
 /*Item del carrusel*/
@@ -70,20 +76,6 @@ h4 {
     border-color: rgb(195, 170, 148);
 }
 
-/*SCROLL SPY*/
-.scrollspy-example {
-    position: relative;
-    height: 90vh;
-    overflow: auto;
-
-    overflow-x: hidden;
-}
-
-
-.card {
-    width: 18rem;
-}
-
 #servicios button {
     width: 80px;
     height: 90px;
@@ -94,4 +86,35 @@ h4 {
 #servicios img {
     width: 100%;
     overflow: hidden;
+}
+
+
+/*SUSCRIBETE*/
+#suscribete button{
+    background-color: rgb(36, 28, 20);
+    border-radius: 2rem;
+    font-size: larger;
+}
+
+.btn-outline-light:hover{
+    color: rgb(195, 170, 148) !important;
+}
+
+.modal-content{
+    
+    background-color: rgb(195, 170, 148) !important;
+}
+
+
+/*SCROLL SPY*/
+.scrollspy-example {
+    position: relative;
+    height: 90vh;
+    overflow: auto;
+
+    overflow-x: hidden;
+}
+
+.card {
+    width: 18rem;
 }

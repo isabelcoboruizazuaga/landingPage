@@ -49,9 +49,10 @@
     <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
 
-            <!--Logo-->
-            <a class="navbar-brand" href="#">
-                <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+            <!--Logo-->            
+            <a class="navbar-brand row" href="#titulo">
+                <img src="media/logo.png" class="invert col-auto " alt="" width="38" height="30">
+                <p  class="col-auto">CafIsa</p>
             </a>
 
             <!--Hamburguesa-->
@@ -64,28 +65,26 @@
             <!--Lista de enlaces-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills  nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#titulo">Título</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#b">Sobre nosotros</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#b" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobre nosotros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#b4">Campos</a></li>
+                            <li><a class="dropdown-item" href="#b1">Agricultores</a></li>
+                            <li><a class="dropdown-item" href="#b2">Fábricas</a></li>
+                            <li><a class="dropdown-item" href="#b3">Cafeterías</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#c">Nuestros expertos dicen</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#d" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Lo que ofrecemos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#e">Algo 1</a></li>
-                            <li><a class="dropdown-item" href="#f">Algo 2</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Algo 3</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#d">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#e">Subscríbete</a>
                     </li>
                 </ul>
             </div>
@@ -157,7 +156,7 @@
                     <img class="img-responsive" src="media/coffe-plantation.jpg">
                 </div>
                 <div class="col-7 texto">
-                    <h3>Titulo 1</h3>
+                    <h3 id="b4">Más de 500 hectáreas cultivadas</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
                         pretium. Nunc
                         pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
@@ -171,7 +170,7 @@
             </div>
             <div class="row p-2 border-bottom conjunto align-items-center">
                 <div class="col-7 texto">
-                    <h3>Titulo 1</h3>
+                    <h3 id="b1">200 agricultores</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
                         pretium. Nunc
                         pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
@@ -191,7 +190,7 @@
                     <img class="img-responsive" src="media/coffe-processing.jpg">
                 </div>
                 <div class="col-7 texto">
-                    <h3>Titulo 1</h3>
+                    <h3 id="b2">27 fábricas procesadoras</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
                         pretium. Nunc
                         pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
@@ -205,7 +204,7 @@
             </div>
             <div class="row p-2 conjunto align-items-center">
                 <div class="col-7 texto">
-                    <h3>Titulo 1</h3>
+                    <h3 id="b3">Más de 200 cafeterías</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere suscipit tellus eu
                         pretium. Nunc
                         pharetra ac mauris ac tincidunt. Vestibulum blandit laoreet purus non dignissim. Nulla sed
@@ -229,7 +228,7 @@
                 <div class="card col-auto ms-4 mb-4">
                     <img class="card-img-top" alt="..." src="media/womanDrinking1.jpg">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">María</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -238,7 +237,7 @@
                 <div class="card col-auto ms-4 mb-4">
                     <img class="card-img-top" alt="..." src="media/manDrinking1.jpg">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">Diego</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -247,7 +246,7 @@
                 <div class="card col-auto ms-4 mb-4">
                     <img class="card-img-top" alt="..." src="media/womanDrinking2.jpg">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">Rosa</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -256,7 +255,7 @@
                 <div class="card col-auto ms-4 mb-4">
                     <img class="card-img-top" alt="..." src="media/manDrinking2.jpg">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">Víctor</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -265,7 +264,7 @@
                 <div class="card col-auto ms-4 mb-4">
                     <img class="card-img-top" alt="..." src="media/womanDrinking3.jpg">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">Natalia</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of
                             the card's content.</p>
@@ -273,7 +272,7 @@
                 </div>
         </section>
 
-        <!--Sección opiniones-->
+        <!--Sección servicios-->
         <section id="servicios">
             <h2 id="d">Servicios</h2>
 
@@ -282,8 +281,7 @@
                 <div class="col-2 d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element1"
                         aria-expanded="false" aria-controls="element1">
-                        <img
-                            src="media/cafe_grano.jpg" />
+                        <img src="media/cafe_grano.jpg" />
                         <div class="mask text-light d-flex justify-content-center flex-column text-center">
                             <h4>Café en grano</h4>
                         </div>
@@ -293,8 +291,7 @@
                 <div class="col-2 d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element2"
                         aria-expanded="false" aria-controls="element2">
-                        <img
-                            src="media/cafeteras.jpg" />
+                        <img src="media/cafeteras.jpg" />
                         <div class="mask text-light d-flex justify-content-center flex-column text-center">
                             <h4>Cafeteras</h4>
                         </div>
@@ -304,8 +301,7 @@
                 <div class="col-2 d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element3"
                         aria-expanded="false" aria-controls="element3">
-                        <img
-                            src="media/recambio_cafe.jpg" />
+                        <img src="media/recambio_cafe.jpg" />
                         <div class="mask text-light d-flex justify-content-center flex-column text-center">
                             <h4>Cápsulas y recambios</h4>
                         </div>
@@ -314,8 +310,7 @@
                 <div class="col-2 d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element4"
                         aria-expanded="false" aria-controls="element4">
-                        <img
-                            src="media/cafeteria.jpg" />
+                        <img src="media/cafeteria.jpg" />
                         <div class="mask text-light d-flex justify-content-center flex-column text-center">
                             <h4>Servicio en cafeterías</h4>
                         </div>
@@ -324,8 +319,7 @@
                 <div class="col-2 d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element5"
                         aria-expanded="false" aria-controls="element5">
-                        <img
-                            src="media/instalacion.jpg" />
+                        <img src="media/instalacion.jpg" />
                         <div class="mask text-light d-flex justify-content-center flex-column text-center">
                             <h4>Instalación y reparación</h4>
                         </div>
@@ -383,17 +377,20 @@
             </div>
         </section>
 
+        <!--Sección subscribete-->
         <section id="suscribete">
-            <h2 id="e">Suscríbete</h2>
-
-            <div class="row">
-                <p class="col-auto">Entérate de todas las novedades</p>
-
+            <div class="row p-5 m-5 align-items-baseline">
+                <div class="col-7 d-flex justify-content-end">
+                    <h1  id="e">Entérate de todas las novedades</h1>
+                </div>
                 <!--Botón-->
-                <button type="button" class="btn btn-primary col-auto" data-bs-toggle="modal"
-                    data-bs-target="#miFormulario">
-                    Formulario
-                </button>
+                <div class="col-4">
+                    <button type="button" class="btn btn-outline-light col-6 offset-1 align-bottom" data-bs-toggle="modal"
+                        data-bs-target="#miFormulario">
+                        Suscribirme
+                    </button>
+                </div>
+
             </div>
 
 
