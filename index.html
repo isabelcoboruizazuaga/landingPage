@@ -37,6 +37,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playball&family=Playfair+Display+SC:ital@1&family=Taviraj&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba0ac8d1c6.js" crossorigin="anonymous"></script>
 
     <!--Mi estilo-->
     <link rel="stylesheet" type="text/css" href="main.css">
@@ -49,10 +50,10 @@
     <nav id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
 
-            <!--Logo-->            
+            <!--Logo-->
             <a class="navbar-brand row" href="#titulo">
                 <img src="media/logo.png" class="invert col-auto " alt="" width="38" height="30">
-                <p  class="col-auto">CafIsa</p>
+                <p class="col-auto">CafIsa</p>
             </a>
 
             <!--Hamburguesa-->
@@ -278,7 +279,7 @@
 
             <!--Botones-->
             <div class="row justify-content-center">
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element1"
                         aria-expanded="false" aria-controls="element1">
                         <img src="media/cafe_grano.jpg" />
@@ -288,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element2"
                         aria-expanded="false" aria-controls="element2">
                         <img src="media/cafeteras.jpg" />
@@ -298,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element3"
                         aria-expanded="false" aria-controls="element3">
                         <img src="media/recambio_cafe.jpg" />
@@ -307,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2  col-sm d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element4"
                         aria-expanded="false" aria-controls="element4">
                         <img src="media/cafeteria.jpg" />
@@ -316,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#element5"
                         aria-expanded="false" aria-controls="element5">
                         <img src="media/instalacion.jpg" />
@@ -329,7 +330,7 @@
 
             <!--Párrafos desplegables-->
             <div class="row justify-content-center">
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="collapse multi-collapse" id="element1">
                         <div class="card card-body">
                             Some placeholder content for the first collapse component of this multi-collapse
@@ -338,7 +339,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="collapse multi-collapse" id="element2">
                         <div class="card card-body">
                             Some placeholder content for the second collapse component of this multi-collapse
@@ -347,7 +348,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="collapse multi-collapse" id="element3">
                         <div class="card card-body">
                             Some placeholder content for the second collapse component of this multi-collapse
@@ -356,7 +357,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="collapse multi-collapse" id="element4">
                         <div class="card card-body">
                             Some placeholder content for the second collapse component of this multi-collapse
@@ -365,7 +366,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2 d-flex justify-content-center">
+                <div class="col-2 col-sm d-flex justify-content-center">
                     <div class="collapse multi-collapse" id="element5">
                         <div class="card card-body">
                             Some placeholder content for the second collapse component of this multi-collapse
@@ -381,12 +382,12 @@
         <section id="suscribete">
             <div class="row p-5 m-5 align-items-baseline">
                 <div class="col-7 d-flex justify-content-end">
-                    <h1  id="e">Entérate de todas las novedades</h1>
+                    <h1 id="e">Entérate de todas las novedades</h1>
                 </div>
                 <!--Botón-->
                 <div class="col-4">
-                    <button type="button" class="btn btn-outline-light col-6 offset-1 align-bottom" data-bs-toggle="modal"
-                        data-bs-target="#miFormulario">
+                    <button type="button" class="btn btn-outline-light col-6 offset-1 align-bottom"
+                        data-bs-toggle="modal" data-bs-target="#miFormulario">
                         Suscribirme
                     </button>
                 </div>
@@ -442,7 +443,48 @@
                 </div>
             </div>
         </section>
+
+        <!--FOOTER-->
+        <footer class="row">
+            <section id="ayuda" class="col d-flex flex-column">
+                <h2>Ayuda</h2>
+                <a class="link-light" href="#">Localizar o gestionar compras</a>
+                <a class="link-light" href="#">Tarifas y política de envío</a>
+                <a class="link-light" href="#">Devolver o reemplazar productos</a>
+                <a class="link-light" href="#">Atención al cliente</a>
+
+            </section>
+            <section id="nosotros" class="col d-flex flex-column">
+                <h2>Nosotros</h2>
+                <p>C/alguna calle Nº0</p>
+                <p>Ciudad, Provincia</p>
+                <p>00000 España</p>
+            </section>
+            <section id="legal" class="col d-flex flex-column">
+                <h2>Legal</h2>
+                <a class="link-light" href="#">Política de uso</a>
+                <a class="link-light" href="#">Política de privacidad</a>
+                <a class="link-light" href="#">Uso de cookies</a>
+            </section>
+            <section id="metodos-pago" class="col d-flex flex-column">
+                <h2>Métodos de pago</h2>
+                <div class="imgs-pago">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+            </section>
+            <section id="redes-sociales" class="col d-flex flex-column">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </section>
+        </footer>
     </div>
+
+
 </body>
 
 </html>
